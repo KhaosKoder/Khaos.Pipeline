@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.Pipeline", "src\Khaos.Pipeline\Khaos.Pipeline.csproj", "{AABBCCDD-1122-3344-5566-778899AABBCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.Pipeline.Tests", "tests\Khaos.Pipeline.Tests\Khaos.Pipeline.Tests.csproj", "{BBCCDDEE-2233-4455-6677-8899AABBCCDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CCDDEEFF-3344-5566-7788-99AABBCCDDEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DDEEFF00-4455-6677-8899-AABBCCDDEEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AABBCCDD-1122-3344-5566-778899AABBCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABBCCDD-1122-3344-5566-778899AABBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABBCCDD-1122-3344-5566-778899AABBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABBCCDD-1122-3344-5566-778899AABBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCCDDEE-2233-4455-6677-8899AABBCCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCCDDEE-2233-4455-6677-8899AABBCCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCCDDEE-2233-4455-6677-8899AABBCCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCCDDEE-2233-4455-6677-8899AABBCCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AABBCCDD-1122-3344-5566-778899AABBCC} = {CCDDEEFF-3344-5566-7788-99AABBCCDDEE}
+		{BBCCDDEE-2233-4455-6677-8899AABBCCDD} = {DDEEFF00-4455-6677-8899-AABBCCDDEEFF}
+	EndGlobalSection
+EndGlobal

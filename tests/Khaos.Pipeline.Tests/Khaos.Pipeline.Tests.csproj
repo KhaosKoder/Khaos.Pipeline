@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="xunit" Version="2.8.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Khaos.Pipeline\Khaos.Pipeline.csproj" />
+  </ItemGroup>
+
+  <!-- Flow reference for adapter testing -->
+  <PropertyGroup>
+    <FlowPath Condition="'$(FlowPath)' == ''">..\..\..\Khaos.Flow\src\Khaos.Flow\Khaos.Flow.csproj</FlowPath>
+    <UseLocalFlow Condition="'$(UseLocalFlow)' == '' AND Exists('$(FlowPath)')">true</UseLocalFlow>
+    <UseLocalFlow Condition="'$(UseLocalFlow)' == ''">false</UseLocalFlow>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(UseLocalFlow)' == 'true'">
+      <ItemGroup>
+        <ProjectReference Include="$(FlowPath)" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="KhaosCode.Flow" Version="1.0.0" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
+</Project>
