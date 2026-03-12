@@ -39,7 +39,7 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="KhaosCode.Flow" Version="1.0.0" />
+        <PackageReference Include="KhaosKode.Flow" Version="1.0.0" />
       </ItemGroup>
     </Otherwise>
   </Choose>

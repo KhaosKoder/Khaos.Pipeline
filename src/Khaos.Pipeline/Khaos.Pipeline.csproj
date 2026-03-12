@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>true</IsPackable>
-    <PackageId>KhaosCode.Pipeline</PackageId>
+    <PackageId>KhaosKode.Pipeline</PackageId>
     <Description>Implementation of composable data transformation pipelines with batch processing support.</Description>
     <PackageTags>pipeline;processing;transformation;batch</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -37,7 +37,7 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="KhaosCode.Pipeline.Abstractions" Version="1.0.0" />
+        <PackageReference Include="KhaosKode.Pipeline.Abstractions" Version="1.0.0" />
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -51,7 +51,7 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="KhaosCode.Flow.Abstractions" Version="1.0.0" />
+        <PackageReference Include="KhaosKode.Flow.Abstractions" Version="1.0.0" />
       </ItemGroup>
     </Otherwise>
   </Choose>
